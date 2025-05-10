@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lifespan Estimator</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="hero">
+    <div class="calculator">
+        <h1>Lifespan Estimator</h1>
+        <input type="number" id="age" placeholder="Age" min="0">
+        <input type="number" id="weight" placeholder="Body Weight in kg" min="0">
+        <button onclick="calculateLifespan()">Calculate Lifespan</button>
+        <div class="result" id="result"></div>
+    </div>
+</div>
+
+<button class="mode-toggle" onclick="toggleMode()" id="modeToggle">
+    <i class="fas fa-moon"></i> Toggle Dark Mode
+</button>
+
+<!-- Health-related SVG vectors -->
+<svg class="bg-element" width="100px" height="100px" style="top: 20%; left: 15%;" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+</svg>
+
+<svg class="bg-element" width="100px" height="100px" style="bottom: 10%; left: 20%; animation: float 20s infinite alternate ease-in-out;" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M16.5 3c1.74 0 3.41.81 4.5 2.09C19.76 4.5 20.5 5.5 20.91 6.5c-.02.28-.05.55-.08.83C20.78 6.57 17 4 12 4c-5 0-9 4-9 9h3.5c0-3.53 2.92-6.5 6.5-6.5s6.5 2.97 6.5 6.5-2.92 6.5-6.5 6.5H3c0-6 5-11 11-11c1.4 0 2.75.25 4 0.7l1.93-1.72C19.51 1.59 17.28 0 12 0c-9.36 0-17 7.64-17 17h17c0-5.51-4.49-10-10-10z" />
+</svg>
+
+<svg class="bg-element" width="100px" height="100px" style="top: 15%; right: 10%; animation: float-reverse 30s infinite alternate ease-in-out;" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 2L1 21h22L12 2zm0 18.9V15.1l1.71-1.71.9-.9L12 11l-4 4 1.18 1.18.9.9L12 17z" />
+</svg>
+
+<script src="script.js"></script>
+</body>
+</html>
